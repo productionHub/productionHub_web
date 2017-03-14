@@ -1,4 +1,4 @@
-class App extends React.Components {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,7 +47,7 @@ class App extends React.Components {
   render() {
     return (
       <div>
-        <Nav/>
+        <Nav />
         <Home user={this.state.user}/>
       </div>
     );
