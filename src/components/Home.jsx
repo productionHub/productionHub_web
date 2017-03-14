@@ -1,5 +1,5 @@
 var Home = (props) => (
-  <p>Welcome {this.props}</p>
+  <p>Welcome {props.user}</p>
 );
 
 window.Home = Home;
