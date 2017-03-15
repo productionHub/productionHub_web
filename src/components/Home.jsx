@@ -1,5 +1,7 @@
 var Home = (props) => (
-  <p>Welcome {props.user}</p>
+  <div>  
+    <p>Welcome {props.user}</p>
+  </div>
 );
 
 window.Home = Home;
