@@ -7,7 +7,8 @@ class App extends React.Component {
       projects: null,
       // current: null,
       // upcoming: null,
-      feed: null
+      feed: null,
+      updates: null
     };
     const apiUrl = null;
   }
@@ -24,7 +25,9 @@ class App extends React.Component {
 
     if (this.state.user === null) {
       // Redirect to login/signup
-      $.ajax({
+      $.ajax({<div>
+        <div></div>
+      </div>
         method: GET,
         url: '/login'
       });
@@ -47,8 +50,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
-        <Home user={this.state.user}/>
+        <Nav user={this.state.user} />
+        <ProductionSidebar projects={this.state.projects} />
+        <Home user={this.state.user} />
+        <Feed updates={this.state.updates} />
       </div>
     );
   }
